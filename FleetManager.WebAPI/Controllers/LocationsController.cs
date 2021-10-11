@@ -42,7 +42,7 @@ namespace FleetManager.WebAPI.Controllers
                 Response.StatusCode = StatusCodes.Status201Created;
                 Response.Headers["Location"] = @$"/api/locations/{id}";
             }
-;           else
+            else
             {
                 Response.StatusCode = StatusCodes.Status500InternalServerError;
             }
